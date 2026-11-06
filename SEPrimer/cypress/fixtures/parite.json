@@ -1,0 +1,81 @@
+{
+  "tolerance": 0.0001,
+  "model_version": "v2.0",
+  "cases": [
+    {
+      "id": "case_01_kolay_karar",
+      "description": "Hızlı, kararlı ve hatasız karar veren deneyimli oyuncu",
+      "input": {
+        "seviye": 2.0,
+        "karar_suresi_sn": 6.0,
+        "onceki_yanlis_sayisi": 0.0,
+        "ipucu_sayisi": 0.0,
+        "sahne_no": 2.0,
+        "karar_degistirme_sayisi": 0.0,
+        "tereddut_orani": 0.3,
+        "teknik_hata_orani": 0.0
+      },
+      "expected_probability": 9.9e-05
+    },
+    {
+      "id": "case_02_tereddutlu",
+      "description": "Uzun süre tereddüt eden ve seçenekleri sık değiştiren acemi oyuncu",
+      "input": {
+        "seviye": 0.0,
+        "karar_suresi_sn": 75.0,
+        "onceki_yanlis_sayisi": 1.0,
+        "ipucu_sayisi": 3.0,
+        "sahne_no": 2.0,
+        "karar_degistirme_sayisi": 5.0,
+        "tereddut_orani": 2.14,
+        "teknik_hata_orani": 1.0
+      },
+      "expected_probability": 1.0
+    },
+    {
+      "id": "case_03_sik_hata_yapan",
+      "description": "Önceki sahnelerde sürekli hata yapan orta seviye oyuncu",
+      "input": {
+        "seviye": 1.0,
+        "karar_suresi_sn": 45.0,
+        "onceki_yanlis_sayisi": 2.0,
+        "ipucu_sayisi": 2.0,
+        "sahne_no": 3.0,
+        "karar_degistirme_sayisi": 3.0,
+        "tereddut_orani": 1.8,
+        "teknik_hata_orani": 1.0
+      },
+      "expected_probability": 0.999914
+    },
+    {
+      "id": "case_04_cok_ipucu_isteyen",
+      "description": "Sık sık ipucu ve Sokratik soru talep eden oyuncu",
+      "input": {
+        "seviye": 0.0,
+        "karar_suresi_sn": 50.0,
+        "onceki_yanlis_sayisi": 0.0,
+        "ipucu_sayisi": 8.0,
+        "sahne_no": 2.0,
+        "karar_degistirme_sayisi": 2.0,
+        "tereddut_orani": 1.43,
+        "teknik_hata_orani": 0.0
+      },
+      "expected_probability": 0.99422
+    },
+    {
+      "id": "case_05_orta_seviye",
+      "description": "Dengeli ve ortalama performans gösteren yazılım mühendisi",
+      "input": {
+        "seviye": 1.0,
+        "karar_suresi_sn": 22.0,
+        "onceki_yanlis_sayisi": 0.0,
+        "ipucu_sayisi": 1.0,
+        "sahne_no": 1.0,
+        "karar_degistirme_sayisi": 1.0,
+        "tereddut_orani": 0.88,
+        "teknik_hata_orani": 0.0
+      },
+      "expected_probability": 0.054016
+    }
+  ]
+}
